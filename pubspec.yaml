@@ -26,3 +26,4 @@ flutter:
   generate: true
   assets:
     - assets/animations/
+    - lib/services/i18n/lang

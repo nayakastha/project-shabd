@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations: 
+    sdk: flutter
+  intl: ^0.17.0    
   lottie: ^1.1.0
   get: ^4.1.4
   get_storage: ^2.0.2
@@ -20,5 +23,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true
   assets:
     - assets/animations/

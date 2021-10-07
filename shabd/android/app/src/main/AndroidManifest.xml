@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.shabd">
+    package="com.indypress.shabd">
    <application
         android:label="shabd"
         android:icon="@mipmap/ic_launcher">

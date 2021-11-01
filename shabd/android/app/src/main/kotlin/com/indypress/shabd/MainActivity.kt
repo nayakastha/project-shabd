@@ -1,4 +1,4 @@
-package com.example.shabd
+package com.indypress.shabd
 
 import io.flutter.embedding.android.FlutterActivity
 

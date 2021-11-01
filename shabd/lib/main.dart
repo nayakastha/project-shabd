@@ -4,6 +4,7 @@ import 'package:shabd/utils/theme.dart';
 import 'package:shabd/views/splashview/splashview.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 

@@ -19,6 +19,8 @@ class AuthController extends GetxController {
   RxString name = ''.obs;
   RxString email = ''.obs;
   RxString language = ''.obs;
+  RxBool logSent = false.obs;
+  RxBool signSent = false.obs;
 
   Future<void> createUser() async {
     await _authService.signInwithOTP(

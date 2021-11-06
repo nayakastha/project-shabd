@@ -19,7 +19,7 @@ class AuthService extends GetxController {
             FirebaseAuth.instance.currentUser!.metadata.lastSignInTime) {
       return const LoginView();
     } else {
-      return const HomeView();
+      return HomeView();
     }
   }
 

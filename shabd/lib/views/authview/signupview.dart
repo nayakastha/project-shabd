@@ -58,7 +58,7 @@ class SignupView extends GetView<AuthController> {
               ],
             ),
             SizedBox(
-              height: SizeConfig.screenHeight! * 0.2,
+              height: SizeConfig.screenHeight! * 0.1,
             ),
             Padding(
               padding: EdgeInsets.only(
@@ -227,7 +227,7 @@ class SignupView extends GetView<AuthController> {
                     if (controller.signSent.value == false) {
                       controller.signSent.value = true;
                     } else {
-                      Get.to(() => const HomeView());
+                      Get.to(() => HomeView());
                     }
                   },
                   child: controller.signSent.value
@@ -250,36 +250,45 @@ class SignupView extends GetView<AuthController> {
                 ),
               ),
             ),
+            SizedBox(
+              height: SizeConfig.screenHeight! * 0.01,
+            ),
             Container(
-                padding: EdgeInsets.all(SizeConfig.safeBlockHorizontal! * 5),
+                padding: EdgeInsets.symmetric(
+                    horizontal: SizeConfig.safeBlockHorizontal! * 5),
                 child: Center(
                   child: RichText(
                     text: TextSpan(
-                        text: 'Didn\'t receive a OTP',
+                        text: 'Didn\'t receive a OTP?',
                         style: const TextStyle(
-                            color: kTextColourBlack, fontSize: 18),
+                            color: kTextColourBlack, fontSize: 12),
                         children: <TextSpan>[
                           TextSpan(
                               text: ' Send me again',
                               style: const TextStyle(
-                                  color: kTextColourBlue, fontSize: 18),
+                                  decoration: TextDecoration.underline,
+                                  color: kTextColourBlue,
+                                  fontSize: 12),
                               recognizer: TapGestureRecognizer()..onTap = () {})
                         ]),
                   ),
                 )),
             Container(
-                padding: EdgeInsets.all(SizeConfig.safeBlockHorizontal! * 5),
+                padding: EdgeInsets.symmetric(
+                    horizontal: SizeConfig.safeBlockHorizontal! * 5),
                 child: Center(
                   child: RichText(
                     text: TextSpan(
                         text: 'Already have an account?',
                         style: const TextStyle(
-                            color: kTextColourBlack, fontSize: 18),
+                            color: kTextColourBlack, fontSize: 12),
                         children: <TextSpan>[
                           TextSpan(
                               text: ' Sign in',
                               style: const TextStyle(
-                                  color: kTextColourBlue, fontSize: 18),
+                                  decoration: TextDecoration.underline,
+                                  color: kTextColourBlue,
+                                  fontSize: 12),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
                                   Get.offAll(() => const LoginView());
@@ -288,20 +297,26 @@ class SignupView extends GetView<AuthController> {
                   ),
                 )),
             Container(
-                padding: EdgeInsets.all(SizeConfig.safeBlockHorizontal! * 5),
+                padding: EdgeInsets.symmetric(
+                    horizontal: SizeConfig.safeBlockHorizontal! * 5),
                 child: Center(
                   child: RichText(
                     text: TextSpan(
                       text: 'Sign In Later',
                       style: const TextStyle(
-                          color: kTextColourBlack, fontSize: 18),
+                          decoration: TextDecoration.underline,
+                          color: kTextColourBlue,
+                          fontSize: 12),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
-                          Get.offAll(() => const HomeView());
+                          Get.offAll(() => HomeView());
                         },
                     ),
                   ),
                 )),
+            SizedBox(
+              height: SizeConfig.screenHeight! * 0.01,
+            ),
           ],
         ),
       ),

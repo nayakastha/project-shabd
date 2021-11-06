@@ -131,7 +131,7 @@ class LoginView extends GetView<AuthController> {
                     if (controller.logSent.value == false) {
                       controller.logSent.value = true;
                     } else {
-                      Get.to(() => const HomeView());
+                      Get.to(() => HomeView());
                     }
                     print(controller.logSent.value);
                   },
@@ -214,7 +214,7 @@ class LoginView extends GetView<AuthController> {
                           fontSize: 12),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
-                          Get.offAll(() => const HomeView());
+                          Get.offAll(() => HomeView());
                         },
                     ),
                   ),

@@ -4,13 +4,16 @@ import 'package:shabd/utils/theme.dart';
 import 'package:shabd/views/homeview/homecontroller.dart';
 
 class HomeView extends GetView<HomeController> {
+
   HomeView({Key? key}) : super(key: key);
   final GlobalKey<ScaffoldState> _key = GlobalKey();
+
 
   @override
   Widget build(BuildContext context) {
     controller.getLoc();
     return Scaffold(
+
       key: _key,
       drawer: const Drawer(),
       appBar: AppBar(
@@ -28,6 +31,7 @@ class HomeView extends GetView<HomeController> {
               icon: const Icon(Icons.settings, color: kTextColourBlue),
               onPressed: () {}),
         ],
+
       ),
       body: Container(
           decoration: const BoxDecoration(
@@ -36,7 +40,10 @@ class HomeView extends GetView<HomeController> {
                 end: Alignment.bottomLeft,
                 colors: [kBlueBgColor, kSecondaryColor]),
           ),
+
           child: Center(child: Text(controller.locationMsg))),
+
+
     );
   }
 }

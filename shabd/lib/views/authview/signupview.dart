@@ -58,7 +58,10 @@ class SignupView extends GetView<AuthController> {
               ],
             ),
             SizedBox(
+
               height: SizeConfig.screenHeight! * 0.1,
+
+
             ),
             Padding(
               padding: EdgeInsets.only(
@@ -227,7 +230,9 @@ class SignupView extends GetView<AuthController> {
                     if (controller.signSent.value == false) {
                       controller.signSent.value = true;
                     } else {
+
                       Get.to(() => HomeView());
+
                     }
                   },
                   child: controller.signSent.value
@@ -250,6 +255,7 @@ class SignupView extends GetView<AuthController> {
                 ),
               ),
             ),
+
             SizedBox(
               height: SizeConfig.screenHeight! * 0.01,
             ),
@@ -262,33 +268,42 @@ class SignupView extends GetView<AuthController> {
                         text: 'Didn\'t receive a OTP?',
                         style: const TextStyle(
                             color: kTextColourBlack, fontSize: 12),
+
                         children: <TextSpan>[
                           TextSpan(
                               text: ' Send me again',
                               style: const TextStyle(
+
                                   decoration: TextDecoration.underline,
                                   color: kTextColourBlue,
                                   fontSize: 12),
+
                               recognizer: TapGestureRecognizer()..onTap = () {})
                         ]),
                   ),
                 )),
             Container(
+
                 padding: EdgeInsets.symmetric(
                     horizontal: SizeConfig.safeBlockHorizontal! * 5),
+
                 child: Center(
                   child: RichText(
                     text: TextSpan(
                         text: 'Already have an account?',
                         style: const TextStyle(
+
                             color: kTextColourBlack, fontSize: 12),
+
                         children: <TextSpan>[
                           TextSpan(
                               text: ' Sign in',
                               style: const TextStyle(
+
                                   decoration: TextDecoration.underline,
                                   color: kTextColourBlue,
                                   fontSize: 12),
+
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
                                   Get.offAll(() => const LoginView());
@@ -297,26 +312,33 @@ class SignupView extends GetView<AuthController> {
                   ),
                 )),
             Container(
+
                 padding: EdgeInsets.symmetric(
                     horizontal: SizeConfig.safeBlockHorizontal! * 5),
+
                 child: Center(
                   child: RichText(
                     text: TextSpan(
                       text: 'Sign In Later',
                       style: const TextStyle(
+
                           decoration: TextDecoration.underline,
                           color: kTextColourBlue,
                           fontSize: 12),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
                           Get.offAll(() => HomeView());
+
+
                         },
                     ),
                   ),
                 )),
+
             SizedBox(
               height: SizeConfig.screenHeight! * 0.01,
             ),
+
           ],
         ),
       ),

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "829950593112",
+    "project_id": "indypress-101",
+    "storage_bucket": "indypress-101.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829950593112:android:2eefb3435557df6ac8a22d",
+        "android_client_info": {
+          "package_name": "com.indypress.shabd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829950593112-7qphf3rnp6bi2u4f41tcaortdnib3eum.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.indypress.shabd",
+            "certificate_hash": "26f9192f12bfdd43fd91b2af37673db6f2af3f7e"
+          }
+        },
+        {
+          "client_id": "829950593112-2pkfk20996nm70p0qbvriv5ot678jqk6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJqX4baMDEO7bpXq4EXUN2yqWygKsZiIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829950593112-2pkfk20996nm70p0qbvriv5ot678jqk6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

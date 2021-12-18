@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:shabd/services/authservice.dart';
-import 'package:shabd/views/home/homcontroller.dart';
+import 'package:shabd/services/news.dart';
+import 'package:shabd/views/home/homecontroller.dart';
 import 'package:shabd/views/login/logincontroller.dart';
 
 class HomeBinding implements Bindings {

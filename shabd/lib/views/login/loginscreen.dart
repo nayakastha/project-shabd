@@ -13,7 +13,7 @@ class LoginView extends GetView<LoginController> {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
-      backgroundColor: kGreyBgColor,
+      backgroundColor: kBgColour,
       body: SafeArea(
         child: Stack(
           children: <Widget>[

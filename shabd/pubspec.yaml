@@ -11,19 +11,23 @@ dependencies:
   flutter:
     sdk: flutter
   awesome_dropdown: ^0.0.4
+  cached_network_image: ^3.2.0
   connectivity_plus: ^1.1.0
   geocoding: ^2.0.1
   geolocator: ^8.0.1
   firebase_auth: ^3.0.1
   firebase_core: ^1.4.0
+  firebase_messaging: ^11.2.4
   lottie: ^1.0.1
   flutter_markdown: ^0.6.4
   flutter_svg: ^0.22.0
   flutter_text_drawable: ^1.0.0
   get: ^4.1.4
   get_storage: ^2.0.2
+  http: ^0.13.4
   url_launcher: ^6.0.7
   firebase_remote_config: ^0.10.0+3
+  webview_flutter: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -34,11 +38,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   uses-material-design: true
   assets:
-    - assets/
-  #   - images/a_dot_ham.jpeg
+    - assets/animations/
+    - assets/images/  #   - images/a_dot_ham.jpeg
   # fonts:
   #   - family: Schyler
   #     fonts:

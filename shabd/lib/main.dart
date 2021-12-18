@@ -8,8 +8,8 @@ import 'package:get/get.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  HomeBinding().dependencies();
   await Firebase.initializeApp();
+  HomeBinding().dependencies();
   runApp(MyApp());
 }
 

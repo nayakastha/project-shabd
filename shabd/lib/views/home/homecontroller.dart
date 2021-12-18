@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
 class HomeController extends GetxController {
-  late RxString _address;
+  RxString address = RxString('...');
 
   Future<String> getCurrentAddress() async {
     Geolocator.getCurrentPosition(
@@ -15,15 +15,15 @@ class HomeController extends GetxController {
       List<Placemark> placemark =
           await placemarkFromCoordinates(position.latitude, position.longitude);
       Placemark? place = placemark[0];
-      _address.value =
+      address.value =
           "${place.locality}, ${place.postalCode}, ${place.country}";
     }).catchError((e) {
       debugPrint(e.toString());
     });
-    return _address.value;
+    return address.value;
   }
 
   void storeAddress() {
-    GetStorage().write('address', _address.value);
+    GetStorage().write('address', address.value);
   }
 }

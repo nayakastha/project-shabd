@@ -7,7 +7,30 @@ List<CategorieModel> getCategories() {
   List<CategorieModel> myCategories = <CategorieModel>[];
   CategorieModel categorieModel;
 
+  categorieModel = CategorieModel();
+  categorieModel.categorieName = "Local";
+  categorieModel.imageAssetUrl =
+      "https://images.unsplash.com/photo-1520451214409-ba3eed10dc52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1502&q=80";
+  myCategories.add(categorieModel);
+
+  categorieModel = CategorieModel();
+  categorieModel.categorieName = "State";
+  categorieModel.imageAssetUrl =
+      "https://images.unsplash.com/photo-1593847794002-a67998d742fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1507&q=80";
+  myCategories.add(categorieModel);
   //1
+  categorieModel = CategorieModel();
+  categorieModel.categorieName = "National";
+  categorieModel.imageAssetUrl =
+      "https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1507&q=80";
+  myCategories.add(categorieModel);
+
+  categorieModel = CategorieModel();
+  categorieModel.categorieName = "International";
+  categorieModel.imageAssetUrl =
+      "https://images.unsplash.com/photo-1552764217-6d34d9795ab9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1507&q=80";
+  myCategories.add(categorieModel);
+
   categorieModel = CategorieModel();
   categorieModel.categorieName = "Business";
   categorieModel.imageAssetUrl =

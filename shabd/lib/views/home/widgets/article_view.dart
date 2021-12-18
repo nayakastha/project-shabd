@@ -36,18 +36,17 @@ class _ArticleViewState extends State<ArticleView> {
           ],
         ),
         actions: <Widget>[
-          Opacity(
-              opacity: 0,
-              child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Icon(
-                    Icons.share,
-                  )))
+          Container(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: const Icon(
+                Icons.share,
+                color: Colors.black87,
+              ))
         ],
         backgroundColor: Colors.transparent,
         elevation: 0.0,
       ),
-      body: Container(
+      body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: WebView(

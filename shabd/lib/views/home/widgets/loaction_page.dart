@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:shabd/services/category_news.dart';
+import 'package:shabd/services/loaction_news.dart';
 import 'package:shabd/views/home/widgets/news_tile.dart';
 
-class CategoryNews extends StatefulWidget {
+class LocationNews extends StatefulWidget {
   final String newsCategory;
 
-  const CategoryNews({
+  const LocationNews({
     Key? key,
     required this.newsCategory,
   }) : super(key: key);
 
   @override
-  _CategoryNewsState createState() => _CategoryNewsState();
+  _LocationNewsState createState() => _LocationNewsState();
 }
 
-class _CategoryNewsState extends State<CategoryNews> {
+class _LocationNewsState extends State<LocationNews> {
   var newslist;
   bool _loading = true;
 
@@ -25,8 +25,8 @@ class _CategoryNewsState extends State<CategoryNews> {
   }
 
   void getNews() async {
-    NewsForCategorie news = NewsForCategorie();
-    await news.getNewsForCategory(widget.newsCategory);
+    NewsForLocation news = NewsForLocation();
+    await news.getNewsForLocation(widget.newsCategory);
     newslist = news.news;
     setState(() {
       _loading = false;

@@ -19,9 +19,6 @@ dependencies:
   firebase_core: ^1.4.0
   firebase_messaging: ^11.2.4
   lottie: ^1.0.1
-  flutter_markdown: ^0.6.4
-  flutter_svg: ^0.22.0
-  flutter_text_drawable: ^1.0.0
   get: ^4.1.4
   get_storage: ^2.0.2
   http: ^0.13.4

@@ -1,6 +1,7 @@
 import 'package:shabd/services/authservice.dart';
 import 'package:shabd/utils/theme.dart';
 import 'package:shabd/utils/ui_scaling.dart';
+import 'package:shabd/views/home/homecontroller.dart';
 import 'package:shabd/views/overalls/error404.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
@@ -47,6 +48,7 @@ class _SplashScreenState extends State<SplashScreen>
               if (connectivityResult != ConnectivityResult.none &&
                   status == AnimationStatus.completed) {
                 await GetStorage().initStorage;
+                await HomeController().getCurrentAddress();
                 final Widget route = await _authService.handleAuth();
                 await Get.off<dynamic>(
                   () => route,
